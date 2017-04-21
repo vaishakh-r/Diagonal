@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCollectionViewCell" id="gTV-IL-0wX" customClass="MovieCollectionViewCell" customModule="Diagonal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="211" height="273"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="211" height="273"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="esa-1y-UVw">
+                        <rect key="frame" x="0.0" y="0.0" width="211" height="253"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qML-lp-FZd">
+                        <rect key="frame" x="0.0" y="263" width="211" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qML-lp-FZd" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="5Oc-SN-gq1"/>
+                <constraint firstItem="qML-lp-FZd" firstAttribute="top" secondItem="esa-1y-UVw" secondAttribute="bottom" constant="10" id="CaP-Q4-KUM"/>
+                <constraint firstItem="esa-1y-UVw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JSB-WZ-LPq"/>
+                <constraint firstAttribute="bottom" secondItem="qML-lp-FZd" secondAttribute="bottom" constant="10" id="NDA-Lu-giG"/>
+                <constraint firstItem="qML-lp-FZd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SLG-JA-ys1"/>
+                <constraint firstItem="esa-1y-UVw" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="UON-cs-dyP"/>
+                <constraint firstItem="esa-1y-UVw" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="kjp-3W-40A"/>
+            </constraints>
+            <size key="customSize" width="211" height="273"/>
+            <connections>
+                <outlet property="movieImageView" destination="esa-1y-UVw" id="la7-5N-CSC"/>
+                <outlet property="movieNameLabel" destination="qML-lp-FZd" id="kNt-e0-lII"/>
+            </connections>
+            <point key="canvasLocation" x="117.5" y="-71.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
